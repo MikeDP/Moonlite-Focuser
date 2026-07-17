@@ -1,7 +1,7 @@
 # Moonlite-Focuser
 ## A Raspberry Pi Pico emulation of a Moonlite focuser for use with INDI.
 
-Moonlite's focuser [INDI driver](https://drivers.indilib.org/focusers/moon-lite/moonlite-focus/moonlite-focus/) uses a simple serial interface to control a suitable stepper motor to move a telescope focus tube in and out.  This integrates simply with astronomical programs such as KStars via EKOS/INDI to allow fully automatic focussing using an imaging CCD.
+Moonlite's focuser [INDI driver](https://drivers.indilib.org/focusers/moon-lite/moonlite-focus/moonlite-focus/ "Indi Moonlite Focuser") uses a simple serial interface to control a suitable stepper motor to move a telescope focus tube in and out.  This integrates simply with astronomical programs such as KStars via EKOS/INDI to allow fully automatic focussing using an imaging CCD.
 
 There are a number of implementations using Arduino within Github already, but I was aiming for a minimum effort/cost device to add to my (very cheap) motorised Dobsonian telescope project.
 
