@@ -10,6 +10,8 @@ This implementaion is similar to a number of Arduino based Moonlite emulators bu
  1. Raspberry Pi Pico microcontroller (version 1)
  2. ULN 2003 stepper driver and 
  3. 28BYJ-48 5V Stepper Motor
+
+![Hardware build view](uln2003stepper.png "Hardware build")
 Total hardware cost was £5.60 (July 2026) + an enclosure and USB cable.  Carefull checks show the normal USB connection can provide enough power to run the Pico and the attached stepper driver and motor, so powering and communicating with the Pico is trivial.
 
 ### Software
