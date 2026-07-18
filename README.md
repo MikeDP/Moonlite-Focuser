@@ -6,12 +6,27 @@ Moonlite's focuser [INDI driver](https://drivers.indilib.org/focusers/moon-lite/
 There are a number of implementations using Arduino within Github already, but I was aiming for a minimum effort/cost device to add to my (very cheap) motorised Dobsonian telescope project.
 
 ### Hardware
-This implementaion is similar to a number of Arduino based Moonlite emulators but uses:
- 1. Raspberry Pi Pico microcontroller (version 1)
+This implementaion is similar to a number of Arduino based Moonlite emulators but uses: | <img src="https://github.com/MikeDP/Moonlite-Focuser/blob/main/uln2003stepper.png" alt="Hardware Build" style="width:50%; height:auto;"> 
+... | 1. Raspberry Pi Pico microcontroller (version 1)
  2. ULN 2003 stepper driver and 
  3. 28BYJ-48 5V Stepper Motor
 
-![Hardware build view](uln2003stepper.png "Hardware build")
+
+<div style="display: flex; align-items: center; gap: 20px;">
+  <div>
+    <img src="https://github.com/MikeDP/Moonlite-Focuser/blob/main/uln2003stepper.png" alt="Description" width="200"/>
+  </div>
+  <div>
+    <ul>
+      <li>Text line 1</li>
+      <li>Text line 2</li>
+      <li>Text line 3</li>
+    </ul>
+  </div>
+</div>
+ 
+
+
 Total hardware cost was £5.60 (July 2026) + an enclosure and USB cable.  Carefull checks show the normal USB connection can provide enough power to run the Pico and the attached stepper driver and motor, so powering and communicating with the Pico is trivial.
 
 ### Software
