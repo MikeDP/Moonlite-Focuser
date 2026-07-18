@@ -6,28 +6,29 @@ Moonlite's focuser [INDI driver](https://drivers.indilib.org/focusers/moon-lite/
 There are a number of implementations using Arduino within Github already, but I was aiming for a minimum effort/cost device to add to my (very cheap) motorised Dobsonian telescope project.
 
 ### Hardware
-This implementaion is similar to a number of Arduino based Moonlite emulators but uses: | <img src="https://github.com/MikeDP/Moonlite-Focuser/blob/main/uln2003stepper.png" alt="Hardware Build" style="width:50%; height:auto;"> 
-... | 1. Raspberry Pi Pico microcontroller (version 1)
- 2. ULN 2003 stepper driver and 
- 3. 28BYJ-48 5V Stepper Motor
+<table>
+<tr>
+<td width="50%" valign="top">
+
+This implementation is similar to a number of Arduino-based MoonLite emulators but uses:
+1. Raspberry Pi Pico microcontroller (version 1)
+2. ULN2003 stepper driver
+3. 28BYJ-48 5V stepper motor
+
+Total hardware cost was £5.60 (July 2026) + an enclosure and USB cable.
+
+Carefull checks show the normal USB connection can provide enough power to run the Pico and the attached stepper driver and motor, so powering and communicating with the Pico is trivial.
+</td>
+<td width="50%" valign="top">
+
+<img src="https://github.com/MikeDP/Moonlite-Focuser/blob/main/uln2003stepper.png" width="100%">
+
+</td>
+</tr>
+</table>
 
 
-<div style="display: flex; align-items: center; gap: 20px;">
-  <div>
-    <img src="https://github.com/MikeDP/Moonlite-Focuser/blob/main/uln2003stepper.png" alt="Description" width="200"/>
-  </div>
-  <div>
-    <ul>
-      <li>Text line 1</li>
-      <li>Text line 2</li>
-      <li>Text line 3</li>
-    </ul>
-  </div>
-</div>
- 
 
-
-Total hardware cost was £5.60 (July 2026) + an enclosure and USB cable.  Carefull checks show the normal USB connection can provide enough power to run the Pico and the attached stepper driver and motor, so powering and communicating with the Pico is trivial.
 
 ### Software
 An INDI server with a collection of INDI device drivers - one of which is a Moonlite driver - runs on a Raspberry Pi 4B.  The Pico is attached via USB. All this is typically installed with ethe system **indi-bin** package.
